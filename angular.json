@@ -3,5 +3,71 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "predictions-component-library": {
+      "projectType": "library",
+      "root": "projects/predictions-component-library",
+      "sourceRoot": "projects/predictions-component-library/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/predictions-component-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/predictions-component-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/predictions-component-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/predictions-component-library/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/predictions-component-library/.storybook",
+            "browserTarget": "predictions-component-library:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/predictions-component-library"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/predictions-component-library/.storybook",
+            "browserTarget": "predictions-component-library:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/predictions-component-library"
+            ],
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "c1e2586f-1ecb-4eee-94d5-603d4773f4d2"
   }
 }
