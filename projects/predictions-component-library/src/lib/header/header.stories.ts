@@ -25,7 +25,7 @@ const ChangeTheme: StoryFn<HeaderComponent> = () => ({
   props: {
     theme: "blue",
     links: [{href: 'https://nba.com', label: "NBA"}, {href: "https://wnba.com", label: "WNBA"}],
-    label: "Sports Predictions"
+    label: "Sports Predictions",
   },
   selector: `<predict-header [theme]="theme" [links]="links" [label]="label" />` 
 })

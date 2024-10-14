@@ -3,13 +3,11 @@ import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'predict-header',
-  standalone: true,
-  imports: [CommonModule], // needed for ngClass
+   // needed for ngClass
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  SPORT_ICON = require('../assets/sport-ball.svg');
 
   ngOnInit() {
     // on page load make sure mobile device or not for offcanvas button to be present
@@ -26,6 +24,7 @@ export class HeaderComponent {
   @Input() theme: 'sports' | 'blue' = 'sports';
   @Input() isOffcanvasOpen = false;
   @Input() isOffcanvasButtonSeen = false;
+  @Input() imgSrc = "/"
   @Input() links = [{ label: 'Google Default', href: 'https://google.com' }];
 
   public get classes(): string {

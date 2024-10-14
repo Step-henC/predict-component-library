@@ -4,8 +4,6 @@ import { TableColumn } from './table.model';
 
 @Component({
   selector: 'predict-table',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css'
 })

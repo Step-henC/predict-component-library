@@ -1,6 +1,6 @@
 {
-  "name": "@heron/predictions-component-library",
-  "version": "0.0.1",
+  "name": "predictions-component-library",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0",
