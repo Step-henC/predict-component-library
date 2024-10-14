@@ -1,0 +1,20 @@
+<div>
+  @if (transformedData[0][0].value !== "not implemented"){
+  <table>
+    <tr [ngClass]="headerClass">
+      @for (column of columns; track column.displayName) {
+      <th>{{ column.displayName }}</th>
+      }
+    </tr>
+    <tbody>
+      @for (datum of transformedData; track datum){
+      <tr [ngClass]="rowClass">
+        <td *ngFor="let kv of datum" >{{ kv.value }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  } @else {
+  <h4>No Data from Prediction</h4>
+  }
+</div>

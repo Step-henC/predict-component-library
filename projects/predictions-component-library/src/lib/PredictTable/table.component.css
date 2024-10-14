@@ -1,0 +1,31 @@
+
+
+.pred-header-sports {
+  background-color: rgb(255, 181, 33);
+  padding: 2px;
+}
+
+.pred-header-blue{
+  background-color: rgb(186, 186, 225);
+  padding: 2px;
+}
+
+
+td {
+  text-align: center;
+  padding: 2px;
+  border-bottom: 1px solid gray;
+  
+}
+
+.pred-row-sports:hover {
+  background-color: rgb(245, 221, 177);
+}
+.pred-row-blue:hover {
+  background-color:  rgb(212, 221, 244);
+}
+table {
+  border-collapse: collapse;
+}
+
+
