@@ -88,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header ></predict-header>`\r\n\r\n})"
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -198,7 +198,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<HeaderComponent>",
-                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header ></predict-header>`\r\n\r\n})"
+                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
                 }
             ],
             "projects/predictions-component-library/.storybook/preview.ts": [

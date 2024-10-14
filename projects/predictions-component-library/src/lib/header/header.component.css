@@ -43,8 +43,27 @@
   .nav-links {
     display: none !important;
   }
+}
 
+@media screen and (min-width: 0px) and (max-width: 990px) {
+  .offcanvas-btn-sports {
+    visibility: visible !important;
+    display: block;
+    }
+  
+    .offcanvas-btn-blue {
+      visibility: visible !important;
+    }
+}
 
+@media screen and (min-width: 991px)  {
+  .offcanvas-btn-sports {
+    visibility: hidden !important;
+    }
+  
+    .offcanvas-btn-blue {
+      visibility: hidden !important;
+    }
 }
 
 .nav-links > * {
@@ -90,6 +109,7 @@
 .offcan-btn-icon {
   font-size: 30px;
   cursor: pointer;
+
 }
 
  .offcanvas-btn-blue {

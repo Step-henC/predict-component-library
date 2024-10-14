@@ -16,7 +16,7 @@ export default {
 
 const Template: StoryFn<HeaderComponent> = () => ({
   component: HeaderComponent,
-  selector: `<predict-header ></predict-header>`
+  selector: `<predict-header [theme]="sports"></predict-header>`
 
 })
 

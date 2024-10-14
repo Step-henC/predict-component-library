@@ -1,18 +1,21 @@
 <!-- <nav class="principal-header"> -->
-  <nav [ngClass]="classes" >
-  
+<nav [ngClass]="classes">
   <div data-testid="logo-div-btn" role="button" class="logo-home-link">
-    <img alt="sport logo" width="30" height="30" src="assets/sportball.svg" />
-    <h6 class="heron-suite">{{label}}</h6>
+    <img
+      alt="sport logo"
+      width="30"
+      height="30"
+      src="src/assets/sportball.svg"
+    />
+    <h6 class="heron-suite">{{ label }}</h6>
   </div>
   <div data-testid="quant-link" id="nav-link-div" class="nav-links">
     @for (link of links; track link) {
-        <a className="gly-link" href={{link.href}}>{{link.label}}</a>
+    <a className="gly-link" href="{{ link.href }}">{{ link.label }}</a>
     }
   </div>
 
   <div
-  *ngIf="isOffcanvasButtonSeen"
     data-testid="offcanvas-btn"
     [ngClass]="offcanvasClass"
     data-bs-toggle="offcanvas"
@@ -21,21 +24,23 @@
   >
     <span class="offcan-btn-icon">&#9776;</span>
   </div>
-@if (isOffcanvasOpen) {
+  @if (isOffcanvasOpen) {
   <div class="offcanvas-menu">
-    <div id='check-in' type="button" (click)="isOffcanvasOpen = false" class="menu-closer" >&#9747;</div>
+    <div
+      id="check-in"
+      type="button"
+      (click)="isOffcanvasOpen = false"
+      class="menu-closer"
+    >
+      &#9747;
+    </div>
     <ul class="navigation">
       @for (link of links; track link) {
-        <li class="nav-item">
-          <a href={{link.href}}>{{link.label}}</a>
-        </li>
+      <li class="nav-item">
+        <a href="{{ link.href }}">{{ link.label }}</a>
+      </li>
       }
     </ul>
-
   </div>
-}
- 
-
-
+  }
 </nav>
-
