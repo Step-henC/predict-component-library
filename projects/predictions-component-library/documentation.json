@@ -14,6 +14,16 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -41,6 +51,16 @@
                 "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
             },
             {
+                "name": "ChangeTheme",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<LoadingSpinnerComponent>",
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" [isLoading]=true/>` \r\n})"
+            },
+            {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -59,6 +79,16 @@
                 "deprecationMessage": "",
                 "type": "Preview",
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "SpinnerBlue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ChangeTheme.bind({})"
             },
             {
                 "name": "Sports",
@@ -94,15 +124,46 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<LoadingSpinnerComponent>",
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\" [isLoading]=true></predict-spinner>`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<TableComponent>",
                 "defaultValue": "() => ({\r\n  component: TableComponent,\r\n  selector: `<predict-table />`\r\n\r\n})"
+            },
+            {
+                "name": "ToggleLoad",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    isLoading: true\r\n  }\r\n\r\n}"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<LoadingSpinnerComponent>",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -117,6 +178,58 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ChangeTheme",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<LoadingSpinnerComponent>",
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" [isLoading]=true/>` \r\n})"
+                },
+                {
+                    "name": "SpinnerBlue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ChangeTheme.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<LoadingSpinnerComponent>",
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\" [isLoading]=true></predict-spinner>`\r\n\r\n})"
+                },
+                {
+                    "name": "ToggleLoad",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    isLoading: true\r\n  }\r\n\r\n}"
+                }
+            ],
             "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts": [
                 {
                     "name": "Base",
@@ -217,6 +330,19 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LoadingSpinnerComponent>",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts": [
                 {
                     "name": "Story",
@@ -323,6 +449,56 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ChangeTheme",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SpinnerBlue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ToggleLoad",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
