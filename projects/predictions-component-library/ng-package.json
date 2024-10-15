@@ -4,7 +4,7 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "assets":  [
+ "assets":  [
     "src/assets",
     { "glob": "**/*", "input": "./node_modules/predictions-component-library/assets", "output": "./assets/predictions-component-library" },
     {
