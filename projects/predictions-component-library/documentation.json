@@ -188,7 +188,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: () => {console.log('hi')}\r\n  },\r\n  \r\n\r\n}"
+                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: fn()\r\n  },\r\n  \r\n\r\n}"
             },
             {
                 "name": "ToggleLoad",
@@ -288,7 +288,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: () => {console.log('hi')}\r\n  },\r\n  \r\n\r\n}"
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: fn()\r\n  },\r\n  \r\n\r\n}"
                 }
             ],
             "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [

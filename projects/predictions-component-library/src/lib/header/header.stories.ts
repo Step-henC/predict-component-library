@@ -3,7 +3,7 @@ import { withKnobs, text, select} from '@storybook/addon-knobs';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 export default {
-  title: "NBA Header",
+  title: "Predict Header",
   component: HeaderComponent,
   withKnobs,
   // decorators: [
