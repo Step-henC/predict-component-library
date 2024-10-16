@@ -14,6 +14,16 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -41,6 +51,26 @@
                 "defaultValue": "{\r\n  args: {\r\n    columns: [{displayName: \"Player Name\", selector: \"playerName\"}, {displayName: \"Last Season Points\", selector: \"lastSeasonPoints\"}, {displayName: \"Predicted Points\", selector: \"predictedPoints\"}, {selector: \"predictedRebounds\", displayName: \"Predicted Rebounds\"}, {selector: \"predictedAssists\", displayName: \"Predicted Assists\"}, {selector: 'id', displayName: \"Player ID\"}],\r\n    tableData: [{id: 1, playerName: \"No Data\", lastSeasonPoints: 0, predictedPoints: 0, predictedRebounds: 0, predictedAssists: 0}, {id: 2, playerName: \"No Data\", lastSeasonPoints: 0, predictedPoints: 0, predictedRebounds: 0, predictedAssists: 0}],\r\n    theme: \"blue\"\r\n  }\r\n}"
             },
             {
+                "name": "ButtonBlue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ChangeTheme.bind({})"
+            },
+            {
+                "name": "ChangeTheme",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PredictButtonComponent>",
+                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-button [theme]=\"theme\" />` \r\n})"
+            },
+            {
                 "name": "ChangeTheme",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -58,7 +88,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<LoadingSpinnerComponent>",
-                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" [isLoading]=true/>` \r\n})"
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
             },
             {
                 "name": "Default",
@@ -114,6 +144,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PredictButtonComponent>",
+                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/header/header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -128,7 +168,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<LoadingSpinnerComponent>",
-                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\" [isLoading]=true></predict-spinner>`\r\n\r\n})"
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\"></predict-spinner>`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -139,6 +179,16 @@
                 "deprecationMessage": "",
                 "type": "StoryFn<TableComponent>",
                 "defaultValue": "() => ({\r\n  component: TableComponent,\r\n  selector: `<predict-table />`\r\n\r\n})"
+            },
+            {
+                "name": "ToggleButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: () => {console.log('hi')}\r\n  },\r\n  \r\n\r\n}"
             },
             {
                 "name": "ToggleLoad",
@@ -153,6 +203,17 @@
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PredictButtonComponent>",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -178,6 +239,58 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ButtonBlue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ChangeTheme.bind({})"
+                },
+                {
+                    "name": "ChangeTheme",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<PredictButtonComponent>",
+                    "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-button [theme]=\"theme\" />` \r\n})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<PredictButtonComponent>",
+                    "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
+                },
+                {
+                    "name": "ToggleButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: () => {console.log('hi')}\r\n  },\r\n  \r\n\r\n}"
+                }
+            ],
             "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
                 {
                     "name": "Base",
@@ -197,7 +310,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<LoadingSpinnerComponent>",
-                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" [isLoading]=true/>` \r\n})"
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
                 },
                 {
                     "name": "SpinnerBlue",
@@ -217,7 +330,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<LoadingSpinnerComponent>",
-                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\" [isLoading]=true></predict-spinner>`\r\n\r\n})"
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\"></predict-spinner>`\r\n\r\n})"
                 },
                 {
                     "name": "ToggleLoad",
@@ -330,6 +443,19 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PredictButtonComponent>",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
                 {
                     "name": "Story",
@@ -409,6 +535,56 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonBlue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ChangeTheme",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ToggleButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

@@ -1,0 +1,30 @@
+
+
+.btn-sports {
+  background-color:rgb(255, 181, 33);;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn-blue {
+  background-color: rgb(186, 186, 225);
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn-blue:hover .btn-sports:hover {
+  border: 1px solid gray;
+}
+
+.btn-disabled {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+}

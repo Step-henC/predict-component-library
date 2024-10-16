@@ -192,6 +192,7 @@ text-decoration: underline;
   margin: 0;
   padding: 0;
   background-color: white;
+  opacity: 1 !important;
 }
 
 .menu-closer {
