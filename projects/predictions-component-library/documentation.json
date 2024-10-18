@@ -74,21 +74,21 @@
                 "name": "ChangeTheme",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/predictions-component-library/src/lib/header/header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" /> <div>This is a sample div with some sample text to test the offcanvas see through. Hopefully it works but you never know. Think I found the issue</div>` \r\n})"
-            },
-            {
-                "name": "ChangeTheme",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<LoadingSpinnerComponent>",
                 "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
+            },
+            {
+                "name": "ChangeTheme",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/header/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<HeaderComponent>",
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
             },
             {
                 "name": "CustomToast",
@@ -204,21 +204,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/predictions-component-library/src/lib/header/header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<LoadingSpinnerComponent>",
                 "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\"></predict-spinner>`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/header/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<HeaderComponent>",
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -455,7 +455,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<HeaderComponent>",
-                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" /> <div>This is a sample div with some sample text to test the offcanvas see through. Hopefully it works but you never know. Think I found the issue</div>` \r\n})"
+                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
                 },
                 {
                     "name": "Sports",
