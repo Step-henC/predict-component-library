@@ -47,22 +47,25 @@
 
 @media screen and (min-width: 0px) and (max-width: 990px) {
   .offcanvas-btn-sports {
-    visibility: visible !important;
+    /* visibility: visible !important; */
     display: block;
     }
   
     .offcanvas-btn-blue {
-      visibility: visible !important;
+      /* visibility: visible !important; */
+      display: block;
     }
 }
 
 @media screen and (min-width: 991px)  {
   .offcanvas-btn-sports {
-    visibility: hidden !important;
+    /* visibility: hidden !important; */
+    display: none;
     }
   
     .offcanvas-btn-blue {
-      visibility: hidden !important;
+      /* visibility: hidden !important; */
+      display: none;
     }
 }
 

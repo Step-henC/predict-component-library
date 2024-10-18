@@ -91,6 +91,16 @@
                 "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
             },
             {
+                "name": "CustomToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later\",\r\n    timeout: 7000\r\n  }\r\n\r\n}"
+            },
+            {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -99,6 +109,26 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ErrorAlert",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<AlertToastComponent>",
+                "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: \"error\",\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />` \r\n})"
+            },
+            {
+                "name": "ErrorToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ErrorAlert.bind({})"
             },
             {
                 "name": "preview",
@@ -141,6 +171,16 @@
                 "defaultValue": "ChangeTheme.bind({})"
             },
             {
+                "name": "SuccessToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -149,6 +189,16 @@
                 "deprecationMessage": "",
                 "type": "StoryFn<PredictButtonComponent>",
                 "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<AlertToastComponent>",
+                "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: 'success',\r\n    message: \"Successfully received data\"\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -209,6 +259,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<PredictButtonComponent>",
                 "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<AlertToastComponent>",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -427,6 +488,58 @@
                     "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
                 }
             ],
+            "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts": [
+                {
+                    "name": "CustomToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later\",\r\n    timeout: 7000\r\n  }\r\n\r\n}"
+                },
+                {
+                    "name": "ErrorAlert",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<AlertToastComponent>",
+                    "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: \"error\",\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />` \r\n})"
+                },
+                {
+                    "name": "ErrorToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ErrorAlert.bind({})"
+                },
+                {
+                    "name": "SuccessToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<AlertToastComponent>",
+                    "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: 'success',\r\n    message: \"Successfully received data\"\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />`\r\n\r\n})"
+                }
+            ],
             "projects/predictions-component-library/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -450,6 +563,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<PredictButtonComponent>",
                     "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AlertToastComponent>",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -531,6 +657,56 @@
             },
             {
                 "filePath": "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CustomToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ErrorAlert",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ErrorToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SuccessToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

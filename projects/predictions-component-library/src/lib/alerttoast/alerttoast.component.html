@@ -1,0 +1,6 @@
+
+
+<div [ngClass]="alertClass" [ariaLabel]="message" role="alert">
+  <p id="alert-msg">{{message}}</p>
+  <button (click)="closeAlert()" type="button" aria-label="close">&#9747;</button>
+</div>
