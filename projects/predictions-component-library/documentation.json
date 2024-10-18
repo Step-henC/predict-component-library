@@ -78,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" /> <div>This is a sample div with some sample text to test the offcanvas see through. Hopefully it works but you never know. Think I found the issue</div>` \r\n})"
             },
             {
                 "name": "ChangeTheme",
@@ -98,7 +98,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later\",\r\n    timeout: 7000\r\n  }\r\n\r\n}"
+                "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later. Try to keep messages short because it will cut off if too long. This is an example of extremely long message\",\r\n    timeout: 0\r\n  }\r\n\r\n}"
             },
             {
                 "name": "Default",
@@ -184,21 +184,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryFn<PredictButtonComponent>",
-                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<AlertToastComponent>",
                 "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: 'success',\r\n    message: \"Successfully received data\"\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PredictButtonComponent>",
+                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -257,8 +257,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<PredictButtonComponent>",
-                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "rawtype": "StoryObj<AlertToastComponent>",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -268,8 +268,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AlertToastComponent>",
-                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "rawtype": "StoryObj<PredictButtonComponent>",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -455,7 +455,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<HeaderComponent>",
-                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
+                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" /> <div>This is a sample div with some sample text to test the offcanvas see through. Hopefully it works but you never know. Think I found the issue</div>` \r\n})"
                 },
                 {
                     "name": "Sports",
@@ -497,7 +497,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later\",\r\n    timeout: 7000\r\n  }\r\n\r\n}"
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later. Try to keep messages short because it will cut off if too long. This is an example of extremely long message\",\r\n    timeout: 0\r\n  }\r\n\r\n}"
                 },
                 {
                     "name": "ErrorAlert",
@@ -556,19 +556,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<PredictButtonComponent>",
-                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 183
-                }
-            ],
             "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts": [
                 {
                     "name": "Story",
@@ -576,6 +563,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<AlertToastComponent>",
                     "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PredictButtonComponent>",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

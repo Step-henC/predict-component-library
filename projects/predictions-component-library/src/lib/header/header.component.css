@@ -47,24 +47,20 @@
 
 @media screen and (min-width: 0px) and (max-width: 990px) {
   .offcanvas-btn-sports {
-    /* visibility: visible !important; */
     display: block;
     }
   
     .offcanvas-btn-blue {
-      /* visibility: visible !important; */
       display: block;
     }
 }
 
 @media screen and (min-width: 991px)  {
   .offcanvas-btn-sports {
-    /* visibility: hidden !important; */
     display: none;
     }
   
     .offcanvas-btn-blue {
-      /* visibility: hidden !important; */
       display: none;
     }
 }
@@ -184,9 +180,20 @@ text-decoration: underline;
 
 .menu-closer {
   left: 0;
-  size: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
+.menu-closer:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.navigation {
+  height: 100%;
+  margin-right:0;
+}
 
 
 

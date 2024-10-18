@@ -9,7 +9,7 @@ export default {
   // decorators: [
   //   moduleMetadata({
   //     declarations: [HeaderComponent],
-  //     imports: [CommonModule, HeaderComponent]
+  //     imports: [CommonModule, HeaderComponent, AlertToastComponent]
   //   })
   // ]
 } as Meta<HeaderComponent>;
