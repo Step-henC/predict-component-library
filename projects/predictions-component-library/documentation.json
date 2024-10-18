@@ -14,6 +14,26 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -31,6 +51,26 @@
                 "defaultValue": "{\r\n  args: {\r\n    columns: [{displayName: \"Player Name\", selector: \"playerName\"}, {displayName: \"Last Season Points\", selector: \"lastSeasonPoints\"}, {displayName: \"Predicted Points\", selector: \"predictedPoints\"}, {selector: \"predictedRebounds\", displayName: \"Predicted Rebounds\"}, {selector: \"predictedAssists\", displayName: \"Predicted Assists\"}, {selector: 'id', displayName: \"Player ID\"}],\r\n    tableData: [{id: 1, playerName: \"No Data\", lastSeasonPoints: 0, predictedPoints: 0, predictedRebounds: 0, predictedAssists: 0}, {id: 2, playerName: \"No Data\", lastSeasonPoints: 0, predictedPoints: 0, predictedRebounds: 0, predictedAssists: 0}],\r\n    theme: \"blue\"\r\n  }\r\n}"
             },
             {
+                "name": "ButtonBlue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ChangeTheme.bind({})"
+            },
+            {
+                "name": "ChangeTheme",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PredictButtonComponent>",
+                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-button [theme]=\"theme\" />` \r\n})"
+            },
+            {
                 "name": "ChangeTheme",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -38,7 +78,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\"\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
+            },
+            {
+                "name": "ChangeTheme",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<LoadingSpinnerComponent>",
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
+            },
+            {
+                "name": "CustomToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later. Try to keep messages short because it will cut off if too long. This is an example of extremely long message\",\r\n    timeout: 0\r\n  }\r\n\r\n}"
             },
             {
                 "name": "Default",
@@ -51,6 +111,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "ErrorAlert",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<AlertToastComponent>",
+                "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: \"error\",\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />` \r\n})"
+            },
+            {
+                "name": "ErrorToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ErrorAlert.bind({})"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -59,6 +139,16 @@
                 "deprecationMessage": "",
                 "type": "Preview",
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "SpinnerBlue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "ChangeTheme.bind({})"
             },
             {
                 "name": "Sports",
@@ -81,6 +171,36 @@
                 "defaultValue": "ChangeTheme.bind({})"
             },
             {
+                "name": "SuccessToast",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<AlertToastComponent>",
+                "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: 'success',\r\n    message: \"Successfully received data\"\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PredictButtonComponent>",
+                "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
+            },
+            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -88,7 +208,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<HeaderComponent>",
-                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header ></predict-header>`\r\n\r\n})"
+                "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<LoadingSpinnerComponent>",
+                "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\"></predict-spinner>`\r\n\r\n})"
             },
             {
                 "name": "Template",
@@ -99,10 +229,63 @@
                 "deprecationMessage": "",
                 "type": "StoryFn<TableComponent>",
                 "defaultValue": "() => ({\r\n  component: TableComponent,\r\n  selector: `<predict-table />`\r\n\r\n})"
+            },
+            {
+                "name": "ToggleButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: fn()\r\n  },\r\n  \r\n\r\n}"
+            },
+            {
+                "name": "ToggleLoad",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    isLoading: true\r\n  }\r\n\r\n}"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<AlertToastComponent>",
+                "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PredictButtonComponent>",
+                "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<LoadingSpinnerComponent>",
+                "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -117,6 +300,110 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ButtonBlue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ChangeTheme.bind({})"
+                },
+                {
+                    "name": "ChangeTheme",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<PredictButtonComponent>",
+                    "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-button [theme]=\"theme\" />` \r\n})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<PredictButtonComponent>",
+                    "defaultValue": "() => ({\r\n  component: PredictButtonComponent,\r\n  selector: `<predict-button [theme]=\"sports\"></predict-button>`\r\n\r\n})"
+                },
+                {
+                    "name": "ToggleButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    disabled: false,\r\n    label: \"Submit\",\r\n    handleClick: fn()\r\n  },\r\n  \r\n\r\n}"
+                }
+            ],
+            "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ChangeTheme",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<LoadingSpinnerComponent>",
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n  },\r\n  selector: `<predict-spinner [theme]=\"theme\" />` \r\n})"
+                },
+                {
+                    "name": "SpinnerBlue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ChangeTheme.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<LoadingSpinnerComponent>",
+                    "defaultValue": "() => ({\r\n  component: LoadingSpinnerComponent,\r\n  selector: `<predict-spinner [theme]=\"sports\"></predict-spinner>`\r\n\r\n})"
+                },
+                {
+                    "name": "ToggleLoad",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    theme: \"sports\",\r\n    isLoading: true\r\n  }\r\n\r\n}"
+                }
+            ],
             "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts": [
                 {
                     "name": "Base",
@@ -168,7 +455,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<HeaderComponent>",
-                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\"\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
+                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  props: {\r\n    theme: \"blue\",\r\n    links: [{href: 'https://nba.com', label: \"NBA\"}, {href: \"https://wnba.com\", label: \"WNBA\"}],\r\n    label: \"Sports Predictions\",\r\n  },\r\n  selector: `<predict-header [theme]=\"theme\" [links]=\"links\" [label]=\"label\" />` \r\n})"
                 },
                 {
                     "name": "Sports",
@@ -198,7 +485,59 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StoryFn<HeaderComponent>",
-                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header ></predict-header>`\r\n\r\n})"
+                    "defaultValue": "() => ({\r\n  component: HeaderComponent,\r\n  selector: `<predict-header [theme]=\"sports\"></predict-header>`\r\n\r\n})"
+                }
+            ],
+            "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts": [
+                {
+                    "name": "CustomToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n\r\n  args: {\r\n    status: \"error\",\r\n    message: \"Failure to retrieve Data. Please try again later. Try to keep messages short because it will cut off if too long. This is an example of extremely long message\",\r\n    timeout: 0\r\n  }\r\n\r\n}"
+                },
+                {
+                    "name": "ErrorAlert",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<AlertToastComponent>",
+                    "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: \"error\",\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />` \r\n})"
+                },
+                {
+                    "name": "ErrorToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "ErrorAlert.bind({})"
+                },
+                {
+                    "name": "SuccessToast",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<AlertToastComponent>",
+                    "defaultValue": "() => ({\r\n  component: AlertToastComponent,\r\n  props: {\r\n    status: 'success',\r\n    message: \"Successfully received data\"\r\n  },\r\n  selector: `<predict-toast [status]=\"status\" />`\r\n\r\n})"
                 }
             ],
             "projects/predictions-component-library/.storybook/preview.ts": [
@@ -217,6 +556,45 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<AlertToastComponent>",
+                    "file": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PredictButtonComponent>",
+                    "file": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LoadingSpinnerComponent>",
+                    "file": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
             "projects/predictions-component-library/src/lib/PredictTable/PredictTable.stories.ts": [
                 {
                     "name": "Story",
@@ -288,6 +666,106 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CustomToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ErrorAlert",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ErrorToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SuccessToast",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/alerttoast/alerttoast.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonBlue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ChangeTheme",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/button/predictbutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ToggleButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/predictions-component-library/src/lib/header/header.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -323,6 +801,56 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ChangeTheme",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SpinnerBlue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/predictions-component-library/src/lib/loadingSpinner/loadingspinner.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ToggleLoad",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

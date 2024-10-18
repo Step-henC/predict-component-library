@@ -4,8 +4,6 @@ import { TableColumn } from './table.model';
 
 @Component({
   selector: 'predict-table',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css'
 })
@@ -16,6 +14,7 @@ export class TableComponent {
   @Input() theme: 'sports' | 'blue' = 'sports';
   @Input() columns: TableColumn[] = [{displayName: 'Player Name', selector: "someSelector"}, {displayName: 'Player Stats', selector: "playerStats"}];
   @Input() tableData: any[] = [{someSelector: "not implemented"}]
+  @Input() noDataMessage = "No data to display"
   transformedData: any[] = [];
 
   ngOnInit() {

@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     "@chromatic-com/storybook",
     "@storybook/addon-knobs",
     "@storybook/addon-interactions",
+    '@storybook/addon-actions'
   ],
   framework: {
     name: "@storybook/angular",
