@@ -6,7 +6,8 @@
   z-index: 9999;
   width: 400px;
   position: fixed;
-  top: 10px;
+  top: 15%;
+  left: 25%;
   height: 45px;
   margin: 10px;
   align-items: center;
@@ -39,7 +40,8 @@ button {
   z-index: 9999;
   width: 400px;
   position: fixed;
-  top: 10px;
+  top: 15%;
+  left: 25%;
   height: 45px;
   margin: 10px;
   align-items: center;

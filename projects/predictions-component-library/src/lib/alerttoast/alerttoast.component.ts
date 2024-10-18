@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'predict-toast',
@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angu
 export class AlertToastComponent {
 
   @Input() 
-  message = 'Label';
+  message = 'Add Message';
 
   @Input() 
   status: 'success' | 'error' = 'error';
