@@ -3,20 +3,20 @@ import { withKnobs, text, select} from '@storybook/addon-knobs';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 export default {
-  title: "NBA Header",
+  title: "Predict Header",
   component: HeaderComponent,
   withKnobs,
   // decorators: [
   //   moduleMetadata({
   //     declarations: [HeaderComponent],
-  //     imports: [CommonModule, HeaderComponent]
+  //     imports: [CommonModule, HeaderComponent, AlertToastComponent]
   //   })
   // ]
 } as Meta<HeaderComponent>;
 
 const Template: StoryFn<HeaderComponent> = () => ({
   component: HeaderComponent,
-  selector: `<predict-header ></predict-header>`
+  selector: `<predict-header [theme]="sports"></predict-header>`
 
 })
 
@@ -25,7 +25,7 @@ const ChangeTheme: StoryFn<HeaderComponent> = () => ({
   props: {
     theme: "blue",
     links: [{href: 'https://nba.com', label: "NBA"}, {href: "https://wnba.com", label: "WNBA"}],
-    label: "Sports Predictions"
+    label: "Sports Predictions",
   },
   selector: `<predict-header [theme]="theme" [links]="links" [label]="label" />` 
 })
