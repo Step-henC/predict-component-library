@@ -1,5 +1,16 @@
 # PredictionsUiWorkspace
 
+[Storybook page here](https://step-henc.github.io/predict-component-library/)
+
+## Run Locally 
+
+git clone and in root directory run: `npm run storybook`
+
+## Consumers 
+
+to utilize in your project, run `npm i predictions-component-library`
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
 ## Development server
