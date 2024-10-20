@@ -1,11 +1,12 @@
-import { CommonModule, KeyValue, KeyValuePipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { TableColumn } from './table.model';
+import { ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'predict-table',
   templateUrl: './table.component.html',
-  styleUrl: './table.component.css'
+  styleUrl: './table.component.css',
+  changeDetection: ChangeDetectionStrategy.Default
 })
 
 
@@ -17,7 +18,8 @@ export class TableComponent {
   @Input() noDataMessage = "No data to display"
   transformedData: any[] = [];
 
-  ngOnInit() {
+
+   ngOnChanges() {
     this.transformedData = this.tableData.map((item) => {
       // transformed data maps tableData keys in order of tableColumns selector value
       // so that data matches with table headers always regardless of consumers data entry

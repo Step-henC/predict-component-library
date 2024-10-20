@@ -3,7 +3,7 @@ import { withKnobs, text, select} from '@storybook/addon-knobs';
 import { CommonModule } from '@angular/common';
 import { TableComponent } from './table.component';
 export default {
-  title: "Basketball Prediction Table",
+  title: "Prediction Table",
   component: TableComponent,
   // decorators: [
   //   moduleMetadata({
