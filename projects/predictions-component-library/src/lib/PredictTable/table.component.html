@@ -1,5 +1,5 @@
 <div>
-  @if (transformedData[0][0].value !== "not implemented"){
+  @if (transformedData.length > 0){
   <table>
     <tr [ngClass]="headerClass">
       @for (column of columns; track column.displayName) {

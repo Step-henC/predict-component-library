@@ -1,8 +1,5 @@
-export class TableColumn {
-  constructor(
-    public displayName: string,
-    public selector: string,
-  ){}
-
+export type TableColumn = {  
+     displayName: string,
+     selector: string,
 }
 

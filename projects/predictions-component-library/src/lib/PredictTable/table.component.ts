@@ -12,8 +12,8 @@ import { TableColumn } from './table.model';
 export class TableComponent {
 
   @Input() theme: 'sports' | 'blue' = 'sports';
-  @Input() columns: TableColumn[] = [{displayName: 'Player Name', selector: "someSelector"}, {displayName: 'Player Stats', selector: "playerStats"}];
-  @Input() tableData: any[] = [{someSelector: "not implemented"}]
+  @Input() columns: TableColumn[] = [];
+  @Input() tableData: any[] = []
   @Input() noDataMessage = "No data to display"
   transformedData: any[] = [];
 
@@ -29,7 +29,6 @@ export class TableComponent {
           }
       return dataSortedByColumns;
     })
-    console.log(this.transformedData)
   }
 
   public get headerClass(): string {
