@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { HeaderComponent } from "./header/header.component";
 import { TableComponent } from "./PredictTable/table.component";
 import { LoadingSpinnerComponent } from "./loadingSpinner/loadingspinner.component";
-import { NgClass } from "@angular/common";
+import { NgClass, NgFor } from "@angular/common";
 import { PredictButtonComponent } from "./button/predictbutton.component";
 import { AlertToastComponent } from "./alerttoast/alerttoast.component";
 
@@ -15,7 +15,7 @@ import { AlertToastComponent } from "./alerttoast/alerttoast.component";
     PredictButtonComponent,
     AlertToastComponent
   ],
-  imports: [NgClass], // since components are non-standalone we need this
+  imports: [NgClass, NgFor], // since components are non-standalone we need this also for table td method
   exports: [
     TableComponent,
     HeaderComponent,
